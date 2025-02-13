@@ -8,11 +8,22 @@
 </head>
 <body class="h-[100000px] bg-red-300">
   <header class="overflow-auto"> <!--Chặn sự cố margin collapse giữa .nav và .header--img -->
-    <div class="nav fixed text-[2.4vw] mt-9 z-10 w-full h-28">
-      <div class="nav__social absolute top-0 pl-15 left-0 font-[aaa] underline">
+    <div class="nav fixed mt-9 z-10 w-full h-28">
+      <div class="nav__social text-[2.4vw] absolute top-0 pl-15 left-0 font-[aaa] underline">
         share
       </div>
-      <div class="nav__popup absolute top-0 pr-15 right-0 font-[aaa] underline">
+        <ul class="nav__social--icons absolute top-0 pl-15 w-[81px]">
+          <li class="inline-block">
+            <img class="w-[33.3333%]" src="https://www.format.com/static/landing_pages/creative_people/facebook-black-8ec0cc7525de199b587c82e4d61a3c4bfd80b6cfc3068233bafffe67c7d8db85.svg" alt="">
+          </li>
+          <li class="inline-block">
+            <img class="w-[33.3333%]" src="https://www.format.com/static/landing_pages/creative_people/twitter-black-e1e5c007f54803b816e503f4f4ec5210222130570f908d745140e6e9a5216aa5.svg" alt="">
+          </li>
+          <li class="inline-block">
+            <img class="w-[33.3333%]" src="https://www.format.com/static/landing_pages/creative_people/email-black-9df419739abcb71981e51bc126e57a787696214520205dacc04f95da48f29bcf.svg" alt="">
+          </li>
+        </ul>
+      <div class="nav__popup text-[2.4vw] absolute top-0 pr-15 right-0 font-[aaa] underline">
         about
       </div>
     </div>
