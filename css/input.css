@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: 'aaa';
+    src: url('../font/download1.ttf') format('truetype');
+  }
+}
