@@ -584,9 +584,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-40 {
     top: calc(var(--spacing) * 40);
   }
@@ -595,12 +592,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
-  }
-  .left-98 {
-    left: calc(var(--spacing) * 98);
   }
   .isolate {
     isolation: isolate;
@@ -815,22 +806,11 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-<<<<<<< HEAD
-  .h-36 {
-    height: calc(var(--spacing) * 36);
-=======
   .h-\[25px\] {
     height: 25px;
   }
-  .h-\[1000px\] {
-    height: 1000px;
-  }
-  .h-\[100px\] {
-    height: 100px;
-  }
   .h-auto {
     height: auto;
->>>>>>> bdfece21ffa5452cc55ce105250beb033b48a35c
   }
   .h-screen {
     height: 100vh;
@@ -1425,6 +1405,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .border-3 {
     border-style: var(--tw-border-style);
     border-width: 3px;
@@ -1502,9 +1486,6 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
-  }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
   }
   .bg-red-300 {
     background-color: var(--color-red-300);
@@ -2320,6 +2301,11 @@
   @font-face {
     font-family: 'ddd';
     src: url('../font/download.ttf');
+  }
+}
+@layer components {
+  .custom-box-shadow {
+    box-shadow: 10px 10px #FF8181, 10px 10px 0px 2px black;
   }
 }
 * {
