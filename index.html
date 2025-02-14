@@ -4,17 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/style.css" rel="stylesheet">
+  <title>Dev HTML/CSS</title>
 </head>
-<body>
-  <header>
-    <div class="navigation fixed h-36">
-      <div class="navigation__social absolute">
-        Social
+<body class="bg-red-300">
+  <!-- Phần Brand Logo và Thanh NavBar -->
+  <header class="overflow-auto"> <!--Chặn sự cố margin collapse giữa .nav và .header--img -->
+    <div class="nav fixed mt-9 z-10 w-full">
+      <div class="nav__social text-[22px] absolute top-0 pl-15 left-0 font-[aaa] underline">
+        share
       </div>
-      <div class="navigation_about absolute">
-        About
+        <ul class="nav__social--icons pl-15 hidden">
+          <li class="float-left px-1.5">
+            <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/facebook-black-8ec0cc7525de199b587c82e4d61a3c4bfd80b6cfc3068233bafffe67c7d8db85.svg" alt="">
+          </li>
+          <li class="float-left px-1.5">
+            <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/twitter-black-e1e5c007f54803b816e503f4f4ec5210222130570f908d745140e6e9a5216aa5.svg" alt="">
+          </li>
+          <li class="float-left px-1.5">
+            <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/email-black-9df419739abcb71981e51bc126e57a787696214520205dacc04f95da48f29bcf.svg" alt="">
+          </li>
+        </ul>
+      <div class="nav__popup text-[22px] absolute top-0 pr-15 right-0 font-[aaa] underline">
+        about
       </div>
     </div>
+    <div class="brand__logo text-center w-full h-auto mt-12" >
+        <img class="brand__logo--title w-[10.6%] mx-auto max-w-[100px]" src="https://www.format.com/static/landing_pages/creative_people/format-red-b3ea74e0966268bcbe5898d1cbe39ba8b1ff40149bbf344ee53833d5785209ef.svg" alt="">
+      <img class="brand__logo--thumbnail w-full max-w-[800px] mx-auto" src="https://www.format.com/static/landing_pages/creative_people/title-20b70380da83a1d7d43e8c87e53ce5da788c54a87697c9e44a271b7154f8c55e.png" alt="">
+    </div>
   </header>
+
+  <!-- Phần Nội Dung -->
+  <div class="content">
+    <div class="chapter1 text-center my-[48px] relative ">
+      <h3 class="chapter1__heading font-[bbb] font-bold text-[18px]">STEP 1</h3>
+      <p class="chapter1__time font-[ccc] text-[90px]/[90px] text-white ">7:30AM</p>
+      <h2 class="chapter1__desc text-[24px]/[36px] font-[ddd] pb-1">
+        Wake up in the morning at your downtown apartment and recall your dreams
+      </h2>
+      <img class="chapter1__img mx-auto w-[80%] max-w-[600px]" src="https://www.format.com/static/landing_pages/creative_people/morning-couple-pizza-72bcfa55bb146ff920750d9af8a2de9de6f77423f667255be3433a7177a3d19d.png" alt="Waking Up">
+      <div class="chapter1__info--one absolute top-40 left-98 border-3 border-solid border-black bg-white inline-block p-[24px]">
+        <p>
+          67% of creatives wake up
+          <br>
+          between 6am and 8:59am
+        </p>
+      </div>
+      <div class="chapter1__info--two border-3 border-solid border-black bg-white inline-block p-[24px]">
+        <p>
+          89% remember their dreams,
+          <br>
+          either somewhat or vividly
+        </p>
+      </div>
+      <div class="chapter1__info--three border-3 border-solid border-black bg-white inline-block p-[24px]">
+        <p>
+          66% have zero tattoos
+        </p>
+      </div>
+      <div class="chapter1__info--four border-3 border-solid border-black bg-white inline-block p-[24px]">
+        <p>
+          50% live in an
+          <br>
+          apartment, condo
+          <br>
+          or loft
+        </p>
+      </div>
+      <div class="chapter1__info--five border-3 border-solid border-black bg-white inline-block p-[24px]">
+        <p>
+          74% live in a city
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
