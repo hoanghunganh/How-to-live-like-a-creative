@@ -5,4 +5,19 @@
     font-family: 'aaa';
     src: url('../font/download1.ttf') format('truetype');
   }
+  @font-face {
+    font-family: 'bbb';
+    src: url('../font/MaisonNeueWEB-Mono.ttf');
+  }
+  @font-face {
+    font-family: 'ccc';
+    src: url('../font/302FBA_1_0.ttf');
+  }
+  @font-face {
+    font-family: 'ddd';
+    src: url('../font/download.ttf');
+  }
+}
+* {
+  outline: 1px solid red
 }
