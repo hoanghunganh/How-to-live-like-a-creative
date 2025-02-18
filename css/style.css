@@ -584,18 +584,27 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+<<<<<<< HEAD
   .top-40 {
     top: calc(var(--spacing) * 40);
   }
+=======
+>>>>>>> 111c4cfe9d5a4080bd8d1292600bc0edf18c4294
   .right-0 {
     right: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+<<<<<<< HEAD
   .left-98 {
     left: calc(var(--spacing) * 98);
   }
+=======
+>>>>>>> 111c4cfe9d5a4080bd8d1292600bc0edf18c4294
   .isolate {
     isolation: isolate;
   }
@@ -722,6 +731,42 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
+  .mt-\[9em\] {
+    margin-top: 9em;
+  }
+  .mt-\[10em\] {
+    margin-top: 10em;
+  }
+  .mt-\[11em\] {
+    margin-top: 11em;
+  }
+  .mt-\[20em\] {
+    margin-top: 20em;
+  }
+  .mt-\[23em\] {
+    margin-top: 23em;
+  }
+  .mb-\[-2em\] {
+    margin-bottom: -2em;
+  }
+  .mb-\[2em\] {
+    margin-bottom: 2em;
+  }
+  .ml-\[-2em\] {
+    margin-left: -2em;
+  }
+  .ml-\[2em\] {
+    margin-left: 2em;
+  }
+  .ml-\[5em\] {
+    margin-left: 5em;
+  }
+  .ml-\[100px\] {
+    margin-left: 100px;
+  }
+  .ml-\[18em\] {
+    margin-left: 18em;
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -812,6 +857,12 @@
   .h-\[25px\] {
     height: 25px;
   }
+<<<<<<< HEAD
+=======
+  .h-\[100000px\] {
+    height: 100000px;
+  }
+>>>>>>> 111c4cfe9d5a4080bd8d1292600bc0edf18c4294
   .h-auto {
     height: auto;
   }
@@ -836,6 +887,15 @@
   .w-\[25px\] {
     width: 25px;
   }
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-\[45\%\] {
+    width: 45%;
+  }
+  .w-\[60\%\] {
+    width: 60%;
+  }
   .w-\[80\%\] {
     width: 80%;
   }
@@ -853,6 +913,9 @@
   }
   .max-w-\[800px\] {
     max-width: 800px;
+  }
+  .max-w-\[992px\] {
+    max-width: 992px;
   }
   .max-w-none {
     max-width: none;
@@ -1405,9 +1468,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-3 {
+  .border-2 {
     border-style: var(--tw-border-style);
-    border-width: 3px;
+    border-width: 2px;
   }
   .border-x {
     border-inline-style: var(--tw-border-style);
@@ -2277,6 +2340,16 @@
   .transform-view {
     transform-box: view-box;
   }
+  .md\:w-\[80\%\] {
+    @media (width >= 48rem) {
+      width: 80%;
+    }
+  }
+  .lg\:w-full {
+    @media (width >= 64rem) {
+      width: 100%;
+    }
+  }
 }
 @layer base {
   @font-face {
@@ -2294,6 +2367,11 @@
   @font-face {
     font-family: 'ddd';
     src: url('../font/download.ttf');
+  }
+}
+@layer components {
+  .custom-box-shadow {
+    box-shadow: 10px 10px #FF8181, 10px 10px 0px 2px black;
   }
 }
 * {

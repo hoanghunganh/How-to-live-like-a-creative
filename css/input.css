@@ -18,6 +18,12 @@
     src: url('../font/download.ttf');
   }
 }
+@layer components {
+  .custom-box-shadow {
+    box-shadow: 10px 10px #FF8181, 10px 10px 0px 2px black;
+  }
+}
 * {
   outline: 1px solid red
 }
+
