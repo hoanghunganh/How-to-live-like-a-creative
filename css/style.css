@@ -584,9 +584,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-40 {
     top: calc(var(--spacing) * 40);
   }
@@ -595,9 +592,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
   }
   .left-98 {
     left: calc(var(--spacing) * 98);
@@ -818,12 +812,6 @@
   .h-\[25px\] {
     height: 25px;
   }
-  .h-\[1000px\] {
-    height: 1000px;
-  }
-  .h-\[100px\] {
-    height: 100px;
-  }
   .h-auto {
     height: auto;
   }
@@ -838,9 +826,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1498,9 +1483,6 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
   .bg-red-300 {
     background-color: var(--color-red-300);
   }
@@ -1687,9 +1669,6 @@
   }
   .p-\[24px\] {
     padding: 24px;
-  }
-  .px-1 {
-    padding-inline: calc(var(--spacing) * 1);
   }
   .px-1\.5 {
     padding-inline: calc(var(--spacing) * 1.5);
