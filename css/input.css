@@ -19,8 +19,35 @@
   }
 }
 @layer components {
-  .custom-box-shadow {
+  .custom-box-shadow-1 {
     box-shadow: 10px 10px #FF8181, 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-2 {
+    box-shadow: 10px 10px rgb(255, 213, 2), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-3 {
+    box-shadow: 10px 10px rgb(102, 199, 208), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-4 {
+    box-shadow: 10px 10px rgb(66, 95, 156), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-5 {
+    box-shadow: 10px 10px rgb(132, 205, 181), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-6 {
+    box-shadow: 10px 10px rgb(184, 214, 82), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-7 {
+    box-shadow: 10px 10px rgb(109, 210, 231), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-8 {
+    box-shadow: 10px 10px rgb(240, 0, 78), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-9 {
+    box-shadow: 10px 10px #9D84CD, 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-10 {
+    box-shadow: 10px 10px #483791, 10px 10px 0px 2px black;
   }
 }
 * {

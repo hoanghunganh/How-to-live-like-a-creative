@@ -713,6 +713,9 @@
   .my-\[48px\] {
     margin-block: 48px;
   }
+  .my-auto {
+    margin-block: auto;
+  }
   .mt-9 {
     margin-top: calc(var(--spacing) * 9);
   }
@@ -725,8 +728,14 @@
   .mt-\[15em\] {
     margin-top: 15em;
   }
+  .mt-\[16em\] {
+    margin-top: 16em;
+  }
   .mt-\[17em\] {
     margin-top: 17em;
+  }
+  .mt-\[18em\] {
+    margin-top: 18em;
   }
   .mt-\[19em\] {
     margin-top: 19em;
@@ -734,20 +743,41 @@
   .mt-\[20em\] {
     margin-top: 20em;
   }
+  .mt-\[24em\] {
+    margin-top: 24em;
+  }
+  .mt-\[25em\] {
+    margin-top: 25em;
+  }
+  .mt-\[26em\] {
+    margin-top: 26em;
+  }
   .mt-\[27em\] {
     margin-top: 27em;
   }
   .mt-\[28em\] {
     margin-top: 28em;
   }
+  .mt-\[29\.5em\] {
+    margin-top: 29.5em;
+  }
   .mt-\[30em\] {
     margin-top: 30em;
+  }
+  .mt-\[33em\] {
+    margin-top: 33em;
   }
   .mt-\[37em\] {
     margin-top: 37em;
   }
   .mr-\[-1em\] {
     margin-right: -1em;
+  }
+  .mr-\[-2em\] {
+    margin-right: -2em;
+  }
+  .mr-\[2em\] {
+    margin-right: 2em;
   }
   .mr-\[4em\] {
     margin-right: 4em;
@@ -758,8 +788,26 @@
   .mr-\[11em\] {
     margin-right: 11em;
   }
+  .mr-\[14em\] {
+    margin-right: 14em;
+  }
+  .mr-\[16em\] {
+    margin-right: 16em;
+  }
+  .mr-\[1em\] {
+    margin-right: 1em;
+  }
+  .mr-\[3em\] {
+    margin-right: 3em;
+  }
+  .mb-\[-1em\] {
+    margin-bottom: -1em;
+  }
   .mb-\[-2em\] {
     margin-bottom: -2em;
+  }
+  .mb-\[0em\] {
+    margin-bottom: 0em;
   }
   .mb-\[2em\] {
     margin-bottom: 2em;
@@ -767,14 +815,29 @@
   .mb-\[3em\] {
     margin-bottom: 3em;
   }
+  .mb-\[10em\] {
+    margin-bottom: 10em;
+  }
   .ml-\[-2em\] {
     margin-left: -2em;
+  }
+  .ml-\[2em\] {
+    margin-left: 2em;
+  }
+  .ml-\[3em\] {
+    margin-left: 3em;
   }
   .ml-\[4em\] {
     margin-left: 4em;
   }
   .ml-\[5em\] {
     margin-left: 5em;
+  }
+  .ml-\[7em\] {
+    margin-left: 7em;
+  }
+  .ml-\[10em\] {
+    margin-left: 10em;
   }
   .ml-\[18em\] {
     margin-left: 18em;
@@ -869,6 +932,9 @@
   .h-\[25px\] {
     height: 25px;
   }
+  .h-\[500px\] {
+    height: 500px;
+  }
   .h-auto {
     height: auto;
   }
@@ -890,15 +956,6 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
-  }
-  .w-\[\%40\] {
-    width: %40;
-  }
   .w-\[10\.6\%\] {
     width: 10.6%;
   }
@@ -911,11 +968,17 @@
   .w-\[40\%\] {
     width: 40%;
   }
+  .w-\[42\%\] {
+    width: 42%;
+  }
   .w-\[45\%\] {
     width: 45%;
   }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[95\%\] {
+    width: 95%;
   }
   .w-full {
     width: 100%;
@@ -1834,6 +1897,9 @@
   .text-\[22px\] {
     font-size: 22px;
   }
+  .text-\[32px\] {
+    font-size: 32px;
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
@@ -2062,6 +2128,9 @@
   }
   .scheme-only-light {
     color-scheme: only light;
+  }
+  .opacity-75 {
+    opacity: 75%;
   }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
@@ -2361,6 +2430,13 @@
   .transform-view {
     transform-box: view-box;
   }
+  .hover\:text-\[rgba\(255\,255\,255\,0\.8\)\] {
+    &:hover {
+      @media (hover: hover) {
+        color: rgba(255,255,255,0.8);
+      }
+    }
+  }
 }
 @layer base {
   @font-face {
@@ -2381,8 +2457,35 @@
   }
 }
 @layer components {
-  .custom-box-shadow {
+  .custom-box-shadow-1 {
     box-shadow: 10px 10px #FF8181, 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-2 {
+    box-shadow: 10px 10px rgb(255, 213, 2), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-3 {
+    box-shadow: 10px 10px rgb(102, 199, 208), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-4 {
+    box-shadow: 10px 10px rgb(66, 95, 156), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-5 {
+    box-shadow: 10px 10px rgb(132, 205, 181), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-6 {
+    box-shadow: 10px 10px rgb(184, 214, 82), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-7 {
+    box-shadow: 10px 10px rgb(109, 210, 231), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-8 {
+    box-shadow: 10px 10px rgb(240, 0, 78), 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-9 {
+    box-shadow: 10px 10px #9D84CD, 10px 10px 0px 2px black;
+  }
+  .custom-box-shadow-10 {
+    box-shadow: 10px 10px #483791, 10px 10px 0px 2px black;
   }
 }
 * {
