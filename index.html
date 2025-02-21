@@ -8,34 +8,36 @@
   <title>Dev HTML/CSS</title>
 </head>
 <body class="bg-red-300">
-  <!-- Phần Brand Logo và Thanh NavBar -->
-  <header class="overflow-auto"> <!--Chặn sự cố margin collapse giữa .nav và .header--img -->
-    <div class="nav fixed mt-9 z-10 w-full">
-      <div class="nav__social text-[22px] absolute top-0 pl-15 left-0 font-[aaa] underline">
-        share
+  <!-- #region Phần Brand Logo và Thanh NavBar -->
+    <header class="overflow-auto"> <!--Chặn sự cố margin collapse giữa .nav và .header--img -->
+      <div class="nav fixed mt-9 z-10 w-full">
+        <div class="nav__social text-[22px] absolute top-0 pl-15 left-0 font-[aaa] underline">
+          share
+        </div>
+          <ul class="nav__social--icons pl-15 hidden">
+            <li class="float-left px-1.5">
+              <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/facebook-black-8ec0cc7525de199b587c82e4d61a3c4bfd80b6cfc3068233bafffe67c7d8db85.svg" alt="">
+            </li>
+            <li class="float-left px-1.5">
+              <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/twitter-black-e1e5c007f54803b816e503f4f4ec5210222130570f908d745140e6e9a5216aa5.svg" alt="">
+            </li>
+            <li class="float-left px-1.5">
+              <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/email-black-9df419739abcb71981e51bc126e57a787696214520205dacc04f95da48f29bcf.svg" alt="">
+            </li>
+          </ul>
+        <div class="nav__popup text-[22px] absolute top-0 pr-15 right-0 font-[aaa] underline">
+          about
+        </div>
       </div>
-        <ul class="nav__social--icons pl-15 hidden">
-          <li class="float-left px-1.5">
-            <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/facebook-black-8ec0cc7525de199b587c82e4d61a3c4bfd80b6cfc3068233bafffe67c7d8db85.svg" alt="">
-          </li>
-          <li class="float-left px-1.5">
-            <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/twitter-black-e1e5c007f54803b816e503f4f4ec5210222130570f908d745140e6e9a5216aa5.svg" alt="">
-          </li>
-          <li class="float-left px-1.5">
-            <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/email-black-9df419739abcb71981e51bc126e57a787696214520205dacc04f95da48f29bcf.svg" alt="">
-          </li>
-        </ul>
-      <div class="nav__popup text-[22px] absolute top-0 pr-15 right-0 font-[aaa] underline">
-        about
+      <div class="brand__logo text-center w-full h-auto mt-12" >
+          <img class="brand__logo--title w-[10.6%] mx-auto max-w-[100px]" src="https://www.format.com/static/landing_pages/creative_people/format-red-b3ea74e0966268bcbe5898d1cbe39ba8b1ff40149bbf344ee53833d5785209ef.svg" alt="">
+        <img class="brand__logo--thumbnail w-full max-w-[800px] mx-auto" src="https://www.format.com/static/landing_pages/creative_people/title-20b70380da83a1d7d43e8c87e53ce5da788c54a87697c9e44a271b7154f8c55e.png" alt="">
       </div>
-    </div>
-    <div class="brand__logo text-center w-full h-auto mt-12" >
-        <img class="brand__logo--title w-[10.6%] mx-auto max-w-[100px]" src="https://www.format.com/static/landing_pages/creative_people/format-red-b3ea74e0966268bcbe5898d1cbe39ba8b1ff40149bbf344ee53833d5785209ef.svg" alt="">
-      <img class="brand__logo--thumbnail w-full max-w-[800px] mx-auto" src="https://www.format.com/static/landing_pages/creative_people/title-20b70380da83a1d7d43e8c87e53ce5da788c54a87697c9e44a271b7154f8c55e.png" alt="">
-    </div>
-  </header>
+    </header>
+  <!-- #endregion -->
 
-  <!-- Phần Nội Dung -->
+
+  <!-- #region Phần Nội Dung -->
    <section class="content">
 
     <!-- #region Chapter 1 -->
@@ -499,17 +501,34 @@
           <a href="https://www.format.com/static/landing_pages/creative_people/how-to-live-like-a-creative-infographic-6f9da43cf8dfa151dd00ee48fd9daf2d071b26ea4d32201878b7f3fa33430d24.jpg" class="chapter11__info--graphic text-center p-[24px] inline-block text-[22px] underline text-white hover:text-[rgba(255,255,255,0.8)] font-[ddd]">Download Infographic</a>
       </div>
     <!-- #endregion -->
-  </section>
+    </section>
 
-  <footer class="footer text-center">
-    <div class="footer__Format--intro">
-      <h3 class="text-[32px] font-[ddd] text-white opacity-75">
-        Produced by your friends at
-      </h3>
-      <a href="https://www.format.com/?fsrc=creative_people">
-        <img class="footer__Format--img w-[30%] mx-auto" src="https://www.format.com/static/landing_pages/creative_people/format-74a94cc47aa019225d4e961c6fa440359436229e3a00a36e9e657df3a11d0874.svg" alt="">
-      </a>
+  <!--#endregion -->
+  
+  <!-- #region Phần liên hệ, thông tin về Format -->
+  <footer class="footer text-center font-[ddd]">
+    <div>
+      <div class="footer__intro">
+        <h3 class=" text-[32px] text-white opacity-75">
+          Produced by your friends at
+        </h3>
+        <a href="https://www.format.com/?fsrc=creative_people">
+          <img class="w-[30%] mx-auto" src="https://www.format.com/static/landing_pages/creative_people/format-74a94cc47aa019225d4e961c6fa440359436229e3a00a36e9e657df3a11d0874.svg" alt="">
+        </a>
+      </div>
+      <div class="line w-[50%] bg-white opacity-[0.75] h-[1px] mx-auto my-[20px]">
+      </div>
+      <div class="footer__info--container inline-block">
+        <div class="footer__info--container sub_container float-left text-left">
+          <p class="text-white">Online portfolios designed for creative minds.</p>
+          <a class="text-white underline hover:text-[rgba(255,255,255,0.8)]" href="https://www.format.com/try">Create an online portfolio</a>
+        </div>
+        <button class="hover:opacity-[0.8] float-right bg-[#EE3440]">
+          Try Format for FREE
+        </button>
+      </div>
     </div>
   </footer>
+  <!-- #endregion -->
 </body>
 </html>
