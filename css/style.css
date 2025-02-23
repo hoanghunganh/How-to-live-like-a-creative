@@ -767,23 +767,14 @@
   .mt-\[37em\] {
     margin-top: 37em;
   }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
   .mr-\[-1em\] {
     margin-right: -1em;
   }
   .mr-\[-2em\] {
     margin-right: -2em;
-  }
-  .mr-\[11em\] {
-    margin-right: 11em;
-  }
-  .mr-\[14em\] {
-    margin-right: 14em;
-  }
-  .mr-\[16em\] {
-    margin-right: 16em;
-  }
-  .mr-\[1em\] {
-    margin-right: 1em;
   }
   .mr-\[2em\] {
     margin-right: 2em;
@@ -797,8 +788,17 @@
   .mr-\[5em\] {
     margin-right: 5em;
   }
-  .mr-\[10px\] {
-    margin-right: 10px;
+  .mr-\[11em\] {
+    margin-right: 11em;
+  }
+  .mr-\[14em\] {
+    margin-right: 14em;
+  }
+  .mr-\[16em\] {
+    margin-right: 16em;
+  }
+  .mr-\[1em\] {
+    margin-right: 1em;
   }
   .mb-\[-1em\] {
     margin-bottom: -1em;
@@ -814,6 +814,15 @@
   }
   .mb-\[10em\] {
     margin-bottom: 10em;
+  }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+  .mb-\[50px\] {
+    margin-bottom: 50px;
+  }
+  .mb-\[100px\] {
+    margin-bottom: 100px;
   }
   .ml-\[-2em\] {
     margin-left: -2em;
@@ -835,9 +844,6 @@
   }
   .ml-\[10em\] {
     margin-left: 10em;
-  }
-  .ml-\[10px\] {
-    margin-left: 10px;
   }
   .ml-\[18em\] {
     margin-left: 18em;
@@ -959,9 +965,6 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-\[\%\] {
-    width: %;
-  }
   .w-\[10\.6\%\] {
     width: 10.6%;
   }
@@ -980,17 +983,11 @@
   .w-\[45\%\] {
     width: 45%;
   }
-  .w-\[50\%\] {
-    width: 50%;
-  }
   .w-\[90\%\] {
     width: 90%;
   }
   .w-\[95\%\] {
     width: 95%;
-  }
-  .w-\[100px\] {
-    width: 100px;
   }
   .w-\[140px\] {
     width: 140px;
@@ -1003,6 +1000,9 @@
   }
   .max-w-\[100px\] {
     max-width: 100px;
+  }
+  .max-w-\[140px\] {
+    max-width: 140px;
   }
   .max-w-\[800px\] {
     max-width: 800px;
@@ -1645,6 +1645,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-red-300 {
     background-color: var(--color-red-300);
   }
@@ -1921,6 +1924,9 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[22px\] {
     font-size: 22px;
   }
@@ -2156,8 +2162,14 @@
   .scheme-only-light {
     color-scheme: only light;
   }
+  .opacity-0 {
+    opacity: 0%;
+  }
   .opacity-75 {
     opacity: 75%;
+  }
+  .opacity-\[0\.8\] {
+    opacity: 0.8;
   }
   .opacity-\[0\.75\] {
     opacity: 0.75;
@@ -2265,6 +2277,21 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .transition-\[opacity-0\.2\] {
+    transition-property: opacity-0.2;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-\[opacity\:0\.2\] {
+    transition-property: 0.2;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-\[opacity\] {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -2298,6 +2325,14 @@
   }
   .transition-normal {
     transition-behavior: normal;
+  }
+  .duration-150 {
+    --tw-duration: 150ms;
+    transition-duration: 150ms;
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
   }
   .ease-in {
     --tw-ease: var(--ease-in);
@@ -2464,6 +2499,20 @@
     &:hover {
       @media (hover: hover) {
         color: rgba(255,255,255,0.8);
+      }
+    }
+  }
+  .hover\:opacity-20 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 20%;
+      }
+    }
+  }
+  .hover\:opacity-100 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 100%;
       }
     }
   }
@@ -2811,6 +2860,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-ease {
   syntax: "*";
   inherits: false;
@@ -2828,10 +2881,6 @@
   inherits: false;
 }
 @property --tw-contain-style {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-duration {
   syntax: "*";
   inherits: false;
 }
