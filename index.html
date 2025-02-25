@@ -11,20 +11,21 @@
   <!-- #region Phần Brand Logo và Thanh NavBar -->
     <header class="overflow-auto"> <!--Chặn sự cố margin collapse giữa .nav và .header--img -->
       <div class="nav fixed mt-9 z-10 w-full">
-        <div class="nav__social text-[22px] absolute top-0 pl-15 left-0 font-[aaa] underline">
+        <div class="nav__social text-[22px] absolute top-0 pl-15 left-0 font-[aaa] underline hover:hidden cursor-default">
+          <!-- Cần sửa lại cho thằng "share" và sub nav trong 1 thẻ div -->
           share
         </div>
-          <ul class="nav__social--icons pl-15 hidden">
-            <li class="float-left px-1.5">
-              <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/facebook-black-8ec0cc7525de199b587c82e4d61a3c4bfd80b6cfc3068233bafffe67c7d8db85.svg" alt="">
-            </li>
-            <li class="float-left px-1.5">
-              <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/twitter-black-e1e5c007f54803b816e503f4f4ec5210222130570f908d745140e6e9a5216aa5.svg" alt="">
-            </li>
-            <li class="float-left px-1.5">
-              <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/email-black-9df419739abcb71981e51bc126e57a787696214520205dacc04f95da48f29bcf.svg" alt="">
-            </li>
-          </ul>
+        <ul class="nav__social--icons pl-15 hidden hover:block">
+          <li class="float-left px-1.5">
+            <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/facebook-black-8ec0cc7525de199b587c82e4d61a3c4bfd80b6cfc3068233bafffe67c7d8db85.svg" alt="">
+          </li>
+          <li class="float-left px-1.5">
+            <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/twitter-black-e1e5c007f54803b816e503f4f4ec5210222130570f908d745140e6e9a5216aa5.svg" alt="">
+          </li>
+          <li class="float-left px-1.5">
+            <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/email-black-9df419739abcb71981e51bc126e57a787696214520205dacc04f95da48f29bcf.svg" alt="">
+          </li>
+        </ul>
         <div class="nav__popup text-[22px] absolute top-0 pr-15 right-0 font-[aaa] underline">
           about
         </div>
@@ -548,6 +549,9 @@
           </a>
         </div>
       </div>
+    </div>
+    <div class="">
+
     </div>
   </footer>
   <!-- #endregion -->

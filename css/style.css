@@ -722,6 +722,24 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
+  .mt-\[28em\] {
+    margin-top: 28em;
+  }
+  .mt-\[29\.5em\] {
+    margin-top: 29.5em;
+  }
+  .mt-\[30em\] {
+    margin-top: 30em;
+  }
+  .mt-\[33em\] {
+    margin-top: 33em;
+  }
+  .mt-\[37em\] {
+    margin-top: 37em;
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
   .mt-\[14em\] {
     margin-top: 14em;
   }
@@ -752,41 +770,11 @@
   .mt-\[27em\] {
     margin-top: 27em;
   }
-  .mt-\[28em\] {
-    margin-top: 28em;
-  }
-  .mt-\[29\.5em\] {
-    margin-top: 29.5em;
-  }
-  .mt-\[30em\] {
-    margin-top: 30em;
-  }
-  .mt-\[33em\] {
-    margin-top: 33em;
-  }
-  .mt-\[37em\] {
-    margin-top: 37em;
-  }
-  .mt-\[100px\] {
-    margin-top: 100px;
-  }
   .mr-\[-1em\] {
     margin-right: -1em;
   }
   .mr-\[-2em\] {
     margin-right: -2em;
-  }
-  .mr-\[2em\] {
-    margin-right: 2em;
-  }
-  .mr-\[3em\] {
-    margin-right: 3em;
-  }
-  .mr-\[4em\] {
-    margin-right: 4em;
-  }
-  .mr-\[5em\] {
-    margin-right: 5em;
   }
   .mr-\[11em\] {
     margin-right: 11em;
@@ -800,6 +788,18 @@
   .mr-\[1em\] {
     margin-right: 1em;
   }
+  .mr-\[2em\] {
+    margin-right: 2em;
+  }
+  .mr-\[3em\] {
+    margin-right: 3em;
+  }
+  .mr-\[4em\] {
+    margin-right: 4em;
+  }
+  .mr-\[5em\] {
+    margin-right: 5em;
+  }
   .mb-\[-1em\] {
     margin-bottom: -1em;
   }
@@ -809,8 +809,8 @@
   .mb-\[2em\] {
     margin-bottom: 2em;
   }
-  .mb-\[3em\] {
-    margin-bottom: 3em;
+  .mb-\[100px\] {
+    margin-bottom: 100px;
   }
   .mb-\[10em\] {
     margin-bottom: 10em;
@@ -818,11 +818,8 @@
   .mb-\[30px\] {
     margin-bottom: 30px;
   }
-  .mb-\[50px\] {
-    margin-bottom: 50px;
-  }
-  .mb-\[100px\] {
-    margin-bottom: 100px;
+  .mb-\[3em\] {
+    margin-bottom: 3em;
   }
   .ml-\[-2em\] {
     margin-left: -2em;
@@ -1146,6 +1143,12 @@
   }
   .animate-none {
     animation: none;
+  }
+  .cursor-alias {
+    cursor: alias;
+  }
+  .cursor-default {
+    cursor: default;
   }
   .touch-pinch-zoom {
     --tw-pinch-zoom: pinch-zoom;
@@ -1644,9 +1647,6 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-red-300 {
     background-color: var(--color-red-300);
@@ -2162,9 +2162,6 @@
   .scheme-only-light {
     color-scheme: only light;
   }
-  .opacity-0 {
-    opacity: 0%;
-  }
   .opacity-75 {
     opacity: 75%;
   }
@@ -2277,21 +2274,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .transition-\[opacity-0\.2\] {
-    transition-property: opacity-0.2;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-\[opacity\:0\.2\] {
-    transition-property: 0.2;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-\[opacity\] {
-    transition-property: opacity;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -2325,10 +2307,6 @@
   }
   .transition-normal {
     transition-behavior: normal;
-  }
-  .duration-150 {
-    --tw-duration: 150ms;
-    transition-duration: 150ms;
   }
   .duration-200 {
     --tw-duration: 200ms;
@@ -2495,17 +2473,24 @@
   .transform-view {
     transform-box: view-box;
   }
+  .hover\:block {
+    &:hover {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
+  .hover\:hidden {
+    &:hover {
+      @media (hover: hover) {
+        display: none;
+      }
+    }
+  }
   .hover\:text-\[rgba\(255\,255\,255\,0\.8\)\] {
     &:hover {
       @media (hover: hover) {
         color: rgba(255,255,255,0.8);
-      }
-    }
-  }
-  .hover\:opacity-20 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 20%;
       }
     }
   }
