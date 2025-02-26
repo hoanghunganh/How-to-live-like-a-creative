@@ -707,6 +707,12 @@
       max-width: 96rem !important;
     }
   }
+  .mx-\[15px\] {
+    margin-inline: 15px;
+  }
+  .mx-\[30px\] {
+    margin-inline: 30px;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -721,6 +727,12 @@
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-\[26em\] {
+    margin-top: 26em;
+  }
+  .mt-\[27em\] {
+    margin-top: 27em;
   }
   .mt-\[28em\] {
     margin-top: 28em;
@@ -764,12 +776,6 @@
   .mt-\[24em\] {
     margin-top: 24em;
   }
-  .mt-\[26em\] {
-    margin-top: 26em;
-  }
-  .mt-\[27em\] {
-    margin-top: 27em;
-  }
   .mr-\[-1em\] {
     margin-right: -1em;
   }
@@ -809,6 +815,9 @@
   .mb-\[2em\] {
     margin-bottom: 2em;
   }
+  .mb-\[3em\] {
+    margin-bottom: 3em;
+  }
   .mb-\[100px\] {
     margin-bottom: 100px;
   }
@@ -817,9 +826,6 @@
   }
   .mb-\[30px\] {
     margin-bottom: 30px;
-  }
-  .mb-\[3em\] {
-    margin-bottom: 3em;
   }
   .ml-\[-2em\] {
     margin-left: -2em;
@@ -1143,9 +1149,6 @@
   }
   .animate-none {
     animation: none;
-  }
-  .cursor-alias {
-    cursor: alias;
   }
   .cursor-default {
     cursor: default;
@@ -2162,6 +2165,9 @@
   .scheme-only-light {
     color-scheme: only light;
   }
+  .opacity-0 {
+    opacity: 0%;
+  }
   .opacity-75 {
     opacity: 75%;
   }
@@ -2473,10 +2479,31 @@
   .transform-view {
     transform-box: view-box;
   }
-  .hover\:block {
-    &:hover {
+  .group-hover\:block {
+    &:is(:where(.group):hover *) {
       @media (hover: hover) {
         display: block;
+      }
+    }
+  }
+  .group-hover\:hidden {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        display: none;
+      }
+    }
+  }
+  .group-hover\:opacity-0 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 0%;
+      }
+    }
+  }
+  .group-hover\:opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
       }
     }
   }
@@ -2491,6 +2518,13 @@
     &:hover {
       @media (hover: hover) {
         color: rgba(255,255,255,0.8);
+      }
+    }
+  }
+  .hover\:opacity-0 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 0%;
       }
     }
   }
