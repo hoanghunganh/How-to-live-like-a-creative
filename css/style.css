@@ -599,9 +599,6 @@
   .isolation-auto {
     isolation: auto;
   }
-  .z-1 {
-    z-index: 1;
-  }
   .z-10 {
     z-index: 10;
   }
@@ -713,9 +710,6 @@
   .mx-\[15px\] {
     margin-inline: 15px;
   }
-  .mx-\[30px\] {
-    margin-inline: 30px;
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -730,6 +724,9 @@
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-\[24em\] {
+    margin-top: 24em;
   }
   .mt-\[26em\] {
     margin-top: 26em;
@@ -776,14 +773,14 @@
   .mt-\[20em\] {
     margin-top: 20em;
   }
-  .mt-\[24em\] {
-    margin-top: 24em;
-  }
   .mr-\[-1em\] {
     margin-right: -1em;
   }
   .mr-\[-2em\] {
     margin-right: -2em;
+  }
+  .mr-\[2em\] {
+    margin-right: 2em;
   }
   .mr-\[11em\] {
     margin-right: 11em;
@@ -796,9 +793,6 @@
   }
   .mr-\[1em\] {
     margin-right: 1em;
-  }
-  .mr-\[2em\] {
-    margin-right: 2em;
   }
   .mr-\[3em\] {
     margin-right: 3em;
@@ -818,6 +812,9 @@
   .mb-\[2em\] {
     margin-bottom: 2em;
   }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
   .mb-\[3em\] {
     margin-bottom: 3em;
   }
@@ -826,9 +823,6 @@
   }
   .mb-\[10em\] {
     margin-bottom: 10em;
-  }
-  .mb-\[30px\] {
-    margin-bottom: 30px;
   }
   .ml-\[-2em\] {
     margin-left: -2em;
@@ -964,9 +958,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1844,9 +1835,6 @@
   .p-\[24px\] {
     padding: 24px;
   }
-  .px-1 {
-    padding-inline: calc(var(--spacing) * 1);
-  }
   .px-1\.5 {
     padding-inline: calc(var(--spacing) * 1.5);
   }
@@ -1856,14 +1844,8 @@
   .py-\[20px\] {
     padding-block: 20px;
   }
-  .pr-15 {
-    padding-right: calc(var(--spacing) * 15);
-  }
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
-  }
-  .pl-15 {
-    padding-left: calc(var(--spacing) * 15);
   }
   .text-center {
     text-align: center;
@@ -2485,24 +2467,10 @@
   .transform-view {
     transform-box: view-box;
   }
-  .group-hover\:block {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        display: block;
-      }
-    }
-  }
   .group-hover\:hidden {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         display: none;
-      }
-    }
-  }
-  .group-hover\:opacity-0 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        opacity: 0%;
       }
     }
   }
@@ -2513,24 +2481,10 @@
       }
     }
   }
-  .hover\:hidden {
-    &:hover {
-      @media (hover: hover) {
-        display: none;
-      }
-    }
-  }
   .hover\:text-\[rgba\(255\,255\,255\,0\.8\)\] {
     &:hover {
       @media (hover: hover) {
         color: rgba(255,255,255,0.8);
-      }
-    }
-  }
-  .hover\:opacity-0 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 0%;
       }
     }
   }
