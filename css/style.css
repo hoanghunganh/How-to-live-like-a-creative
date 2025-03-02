@@ -725,6 +725,9 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
+  .mt-\[20em\] {
+    margin-top: 20em;
+  }
   .mt-\[24em\] {
     margin-top: 24em;
   }
@@ -770,9 +773,6 @@
   .mt-\[19em\] {
     margin-top: 19em;
   }
-  .mt-\[20em\] {
-    margin-top: 20em;
-  }
   .mr-\[-1em\] {
     margin-right: -1em;
   }
@@ -803,6 +803,9 @@
   .mr-\[5em\] {
     margin-right: 5em;
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
   .mb-\[-1em\] {
     margin-bottom: -1em;
   }
@@ -812,17 +815,17 @@
   .mb-\[2em\] {
     margin-bottom: 2em;
   }
-  .mb-\[30px\] {
-    margin-bottom: 30px;
-  }
   .mb-\[3em\] {
     margin-bottom: 3em;
   }
-  .mb-\[100px\] {
-    margin-bottom: 100px;
-  }
   .mb-\[10em\] {
     margin-bottom: 10em;
+  }
+  .mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+  .mb-\[50px\] {
+    margin-bottom: 50px;
   }
   .ml-\[-2em\] {
     margin-left: -2em;
@@ -1832,6 +1835,9 @@
   .p-\[24px\] {
     padding: 24px;
   }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
   .px-1\.5 {
     padding-inline: calc(var(--spacing) * 1.5);
   }
@@ -2558,6 +2564,9 @@
   }
   .bg-1 {
     background-color: rgba(255, 129, 129, 0.8);
+    background-image: url('https://www.format.com/static/landing_pages/creative_people/sketches-bg-ffb8f11acd4f254ba9b92c3998f827edf8c0d7b657855f11b2cd93e9955c3004.png');
+    background-size: contain;
+    background-repeat: repeat;
   }
 }
 * {

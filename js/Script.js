@@ -18,7 +18,8 @@ document.addEventListener("scroll", () => {
     
     let currentColor = ''; // tạo biến rỗng
     const contents = document.querySelectorAll('.wrapper');
-
+    const sectionHeight = window.innerHeight / 4; // Chia màn hình thành 4 phần
+    
     // Lướt qua từng phần tử trong biến chapters
     chapters.forEach((chapter, index) => { // chapter = các chapter trong mảng / index = vị trí của chapter trong mảng
         const rect = chapter.getBoundingClientRect(); // Lấy vị trí của các chapter
@@ -35,15 +36,28 @@ document.addEventListener("scroll", () => {
 
     contents.forEach((content) => {
         const rect = content.getBoundingClientRect();
-        if (rect.top <= window.innerHeight - 50 && rect.bottom <= window.innerHeight - 50){
+        
+        // Kiểm tra phần tử có nằm trong 3 phần trên cùng (phần 1,2,3)
+        if (rect.top <= 3 * sectionHeight && rect.bottom >= 2 * sectionHeight) {
             content.style.opacity = '1';
+        } else {
+            content.style.opacity = '0';
         }
-        else{
-            content.style.opacity = "0";
-        }
-        // console.log(window.innerHeight/10);
-        // console.log(rect.top);
-    })
+    });
 
     document.body.style.backgroundColor = currentColor;
+});
+
+document.addEventListener('mousemove', (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    const speed = 0.01; // Tốc độ di chuyển
+    const bgWidth = 1920; // Chiều rộng gốc của ảnh background
+    
+    // Tính toán phần trăm di chuyển dựa trên chiều rộng ảnh
+    const xOffset = (mouseX / window.innerWidth) * bgWidth * speed;
+    const yOffset = (mouseY / window.innerHeight) * 100 * speed;
+    
+    document.body.style.backgroundPosition = 
+        `${-xOffset}px ${50 - yOffset}%`;
 });
