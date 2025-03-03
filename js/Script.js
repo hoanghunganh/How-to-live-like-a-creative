@@ -29,16 +29,13 @@ document.addEventListener("scroll", () => {
         else if (rect.top && rect.bottom < window.innerHeight){ // Điều kiện đặc biệt cho thẻ Footer khi muốn giữ nguyên màu cuối cùng khi scroll tới Footer
             currentColor = colors[index];
         }
-        console.log(window.innerHeight/2)
-        console.log(rect.top)
-        console.log(rect.bottom)
     });
 
     contents.forEach((content) => {
         const rect = content.getBoundingClientRect();
         
         // Kiểm tra phần tử có nằm trong 3 phần trên cùng (phần 1,2,3)
-        if (rect.top <= 3 * sectionHeight && rect.bottom >= 2 * sectionHeight) {
+        if (rect.top <= 3 * sectionHeight && rect.bottom <= 3 * sectionHeight) {
             content.style.opacity = '1';
         } else {
             content.style.opacity = '0';
@@ -51,7 +48,7 @@ document.addEventListener("scroll", () => {
 document.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
-    const speed = 0.01; // Tốc độ di chuyển
+    const speed = 0.03; // Tốc độ di chuyển
     const bgWidth = 1920; // Chiều rộng gốc của ảnh background
     
     // Tính toán phần trăm di chuyển dựa trên chiều rộng ảnh
