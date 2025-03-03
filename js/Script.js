@@ -35,7 +35,7 @@ document.addEventListener("scroll", () => {
         const rect = content.getBoundingClientRect();
         
         // Kiểm tra phần tử có nằm trong 3 phần trên cùng (phần 1,2,3)
-        if (rect.top <= 3 * sectionHeight && rect.bottom <= 3 * sectionHeight) {
+        if (rect.top && rect.bottom <= 3 * sectionHeight) {
             content.style.opacity = '1';
         } else {
             content.style.opacity = '0';
