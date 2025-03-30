@@ -13,7 +13,7 @@
   </style>
   <title>Dev HTML/CSS</title>
 </head>
-<body class="bg-1 transition duration-[0.5s] ease-in-out">
+<body class="bg-1 md:bg-3 transition duration-[0.5s] ease-in-out">
   <!-- #region Phần Brand Logo và Thanh NavBar -->
     <header class="overflow-auto"> <!--Chặn sự cố margin collapse giữa .nav và .header--img -->
       <div class="nav fixed mt-9 mx-[30px] z-10 w-[calc(100%-60px)]">
@@ -42,10 +42,53 @@
           </ul>
         </div>
         <div class="nav__popup text-[22px] absolute top-0 right-0 font-[aaa] underline">
-          <a href="">about</a>
+          <a class="cursor-pointer">about</a>
         </div>
-        <div class="about_content"> 
-          <!-- Nội dung của about -->
+        <div class="about_content js_modal fixed top-0 bottom-0 right-0 left-0 bg-2 hidden"> 
+          <a class="js_cls block absolute top-0 right-0 p-[20px]">
+            <img class="cursor-pointer" src="https://www.format.com/static/landing_pages/creative_people/close-3cb6cd6502a028556eb4dacfc0145d3e06fb1598caa86d036484efc8135098c7.svg" alt="">
+          </a>
+          <div class="mt-[110px] mx-auto max-w-[800px] px-[15px]">
+            <h1 class="text-6xl text-white font-[ccc] pb-[15px]">
+              ABOUT
+            </h1>
+            <div class="font-[ddd] text-white text-[18px] mt-[15px]">
+              <p>
+                Seeking to further our understanding of what it means to lead a creative life, we surveyed over 2000 members of the talented <a href="https://www.format.com/customers" class="underline">Format community</a> at the end of 2015.
+              </p>
+              <p class="pt-[12px]">
+                “How do today's photographers, designers, illustrators, artists, filmmakers and other creative pros spend their time?” we mused. “Where do they reside? How do they work—and more importantly—play? What are their differences and similarities?”
+              </p>
+              <p class="pt-[12px]">
+                Shattering the disorganized, sleep-all-day, drink-all-night "starving artist" stereotype, our results depict a group of confident, business-minded, active individuals that are passionate about their crafts. United beyond a penchant for spectacles and motorcycle jackets, they’re driven by the need to express themselves and maintain a sense of achievement.
+              </p>
+              <p class="pt-[12px]">
+                Here, we’ve teamed up with illustrator <a href="https://www.samislandart.com/" class="underline">Sam Island</a> to visualize their daily habits, hour by hour. Consider it a step-by-step guide to achieving a modern creative life.
+              </p>
+              <p class="pt-[12px]">
+                Follow the timeline, peruse the data and let us know: how does your day match up?
+              </p>
+              <div class="social-bottom-icons font-[bbb] text-center mt-[3.5em]">
+                <ul class="follow-icons overflow-auto inline-block"> <!-- chặn sự cố thẻ cha không nhận height mặc dù có nội dung bên trong -->
+                  <li class="float-left px-1">
+                    <a href="https://www.facebook.com/useformat" class=" hover:opacity-100 duration-200 ease-in-out">
+                      <img class="w-[25px] h-[25px] pb-[2px]" src="https://www.format.com/static/landing_pages/creative_people/facebook-d2319901f2605eb1075d357845368f6b17c235ebbbbd4affb076fd19926e0445.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="float-left px-1">
+                    <a href="https://x.com/useformat" class=" hover:opacity-100 duration-200 ease-in-out">
+                      <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/twitter-e8c3ca28ff401f1f4aaea9165abe256fffa51312a5be067b71c9bdb04dbd26ab.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="float-left px-1">
+                    <a href="https://www.format.com/" class=" hover:opacity-100 duration-200 ease-in-out">
+                      <img class="w-[25px] h-[25px]" src="https://www.format.com/static/landing_pages/creative_people/instagram-94ae88948dc2aade42e9350b75993678fd17e16b784ed57ea049643a8c9e7b2e.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="brand__logo text-center w-full h-auto mt-12" >

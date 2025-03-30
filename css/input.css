@@ -52,11 +52,16 @@
 
   .bg-1{
     background-color: rgba(255, 129, 129, 0.8);
-    background-image: url('https://www.format.com/static/landing_pages/creative_people/sketches-bg-ffb8f11acd4f254ba9b92c3998f827edf8c0d7b657855f11b2cd93e9955c3004.png');
     background-size: contain; /* Đảm bảo ảnh fill theo chiều ngang */
     background-repeat: repeat; /* Lặp theo chiều ngang */
-    
+  };
+  .bg-3{
+    background-image: url('https://www.format.com/static/landing_pages/creative_people/sketches-bg-ffb8f11acd4f254ba9b92c3998f827edf8c0d7b657855f11b2cd93e9955c3004.png');
   }
+  .bg-2{
+    background-color: rgba(102,199,208,0.95);
+  }
+
 }
 * {
   outline: 1px solid red
