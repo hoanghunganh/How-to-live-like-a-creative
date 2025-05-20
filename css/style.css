@@ -2568,6 +2568,9 @@
     background-size: contain;
     background-repeat: repeat;
   }
+  .bg-2 {
+    background-color: rgba(102, 199, 208, 0.95);
+  }
 }
 * {
   outline: 1px solid red;
