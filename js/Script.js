@@ -58,3 +58,23 @@ document.addEventListener('mousemove', (e) => {
     document.body.style.backgroundPosition = 
         `${-xOffset}px ${50 - yOffset}%`;
 });
+
+// Đảm bảo code chạy sau khi DOM load xong
+window.addEventListener('load', () => {
+    const modal = document.querySelector('.js_modal');
+    const closeBtn = document.querySelector('.js_cls');
+    const aboutBtn = document.querySelector('.nav__popup a'); // Nút about
+
+    
+    // Test bằng console.log
+    console.log('Modal element:', modal);
+    console.log('Close button:', closeBtn);
+    
+        aboutBtn.addEventListener('click', (e) => {
+            modal.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+});
